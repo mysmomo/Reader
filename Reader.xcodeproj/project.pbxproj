@@ -11,6 +11,9 @@
 		67D414EA271EF8D500E262C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D414E9271EF8D500E262C0 /* ContentView.swift */; };
 		67D414EC271EF8D700E262C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D414EB271EF8D700E262C0 /* Assets.xcassets */; };
 		67D414EF271EF8D700E262C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D414EE271EF8D700E262C0 /* Preview Assets.xcassets */; };
+		67D414F6271EF99400E262C0 /* NewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D414F5271EF99400E262C0 /* NewsSource.swift */; };
+		67D414FB271F250000E262C0 /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D414FA271F250000E262C0 /* ArticleData.swift */; };
+		67D414FD2721925100E262C0 /* NewsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D414FC2721925100E262C0 /* NewsDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		67D414E9271EF8D500E262C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		67D414EB271EF8D700E262C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D414EE271EF8D700E262C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67D414F5271EF99400E262C0 /* NewsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSource.swift; sourceTree = "<group>"; };
+		67D414FA271F250000E262C0 /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
+		67D414FC2721925100E262C0 /* NewsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				67D414E7271EF8D500E262C0 /* ReaderApp.swift */,
 				67D414E9271EF8D500E262C0 /* ContentView.swift */,
+				67D414FC2721925100E262C0 /* NewsDetail.swift */,
+				67D414F5271EF99400E262C0 /* NewsSource.swift */,
+				67D414FA271F250000E262C0 /* ArticleData.swift */,
 				67D414EB271EF8D700E262C0 /* Assets.xcassets */,
 				67D414ED271EF8D700E262C0 /* Preview Content */,
 			);
@@ -139,6 +148,9 @@
 			files = (
 				67D414EA271EF8D500E262C0 /* ContentView.swift in Sources */,
 				67D414E8271EF8D500E262C0 /* ReaderApp.swift in Sources */,
+				67D414FB271F250000E262C0 /* ArticleData.swift in Sources */,
+				67D414FD2721925100E262C0 /* NewsDetail.swift in Sources */,
+				67D414F6271EF99400E262C0 /* NewsSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

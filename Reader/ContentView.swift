@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    //将视图和数据模型关联起来，并接受published更新
+    @StateObject var publishedData = DataValue()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            List(publishedData.articles){ article in
+                NavigationLink(destination: Detail(article: article)) {
+                    Row(article: article)
+                }
+            }
+        }.navigationTitle("编辑推荐")
     }
 }
 
