@@ -11,10 +11,12 @@ struct Row: View{
     var article: Article
     var body: some View{
         VStack(alignment: .leading){
+//            Text(article.title)
             Text(article.title)
                 .font(.title3)
                 .bold()
                 .padding(.bottom, 3)
+//            Text(article.body)
             Text(article.body)
                 .lineLimit(3)
         }

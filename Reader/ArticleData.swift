@@ -13,6 +13,9 @@ struct Article: Codable, Identifiable{
     var id: Int
     var title: String
     var body: String
+    //    var id: Int
+    //    var trackName: String
+    //    var collectionName: String
 }
 
 //定义视图模型，讲视图与模型绑定，Published通知由模型数据变更引起视图变更
@@ -20,7 +23,8 @@ class DataValue: ObservableObject{
     @Published var articles = [Article]()
     
     init(){
-        let url = URL(string: "https://www.legolas.me/s/articles.json")!
+                let url = URL(string: "https://www.legolas.me/s/articles.json")!
+//        let url = URL(string: "http://niuapp.top:8000/articles.json")!
         URLSession.shared.dataTask(with: url) { jsonData, response, Error in
             DispatchQueue.main.async {
                 self.articles = try! JSONDecoder().decode([Article].self, from: jsonData!)

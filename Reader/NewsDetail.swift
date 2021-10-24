@@ -13,6 +13,7 @@ struct Detail: View{
     var body: some View{
         ScrollView{
             VStack(alignment: .leading){
+//                Text(article.body)
                 Text(article.body)
 
             }.padding()
