@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		67094A632725AC68003598A5 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67094A622725AC68003598A5 /* Setting.swift */; };
 		67094A652725AFF5003598A5 /* TouchVibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67094A642725AFF5003598A5 /* TouchVibration.swift */; };
+		674742C227381F35009C81C1 /* LockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674742C127381F35009C81C1 /* LockedView.swift */; };
+		674742C4273831A3009C81C1 /* ReadNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674742C3273831A3009C81C1 /* ReadNote.swift */; };
+		674742C6273834D6009C81C1 /* ButtonModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674742C5273834D6009C81C1 /* ButtonModule.swift */; };
 		67D414E8271EF8D500E262C0 /* ReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D414E7271EF8D500E262C0 /* ReaderApp.swift */; };
 		67D414EA271EF8D500E262C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D414E9271EF8D500E262C0 /* ContentView.swift */; };
 		67D414EC271EF8D700E262C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D414EB271EF8D700E262C0 /* Assets.xcassets */; };
@@ -21,6 +24,10 @@
 /* Begin PBXFileReference section */
 		67094A622725AC68003598A5 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		67094A642725AFF5003598A5 /* TouchVibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchVibration.swift; sourceTree = "<group>"; };
+		674742C02738153B009C81C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		674742C127381F35009C81C1 /* LockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedView.swift; sourceTree = "<group>"; };
+		674742C3273831A3009C81C1 /* ReadNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNote.swift; sourceTree = "<group>"; };
+		674742C5273834D6009C81C1 /* ButtonModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModule.swift; sourceTree = "<group>"; };
 		67D414E4271EF8D500E262C0 /* Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D414E7271EF8D500E262C0 /* ReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderApp.swift; sourceTree = "<group>"; };
 		67D414E9271EF8D500E262C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,9 +68,13 @@
 		67D414E6271EF8D500E262C0 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				674742C02738153B009C81C1 /* Info.plist */,
 				67094A642725AFF5003598A5 /* TouchVibration.swift */,
 				67094A622725AC68003598A5 /* Setting.swift */,
 				67D414E7271EF8D500E262C0 /* ReaderApp.swift */,
+				674742C3273831A3009C81C1 /* ReadNote.swift */,
+				674742C5273834D6009C81C1 /* ButtonModule.swift */,
+				674742C127381F35009C81C1 /* LockedView.swift */,
 				67D414E9271EF8D500E262C0 /* ContentView.swift */,
 				67D414FC2721925100E262C0 /* NewsDetail.swift */,
 				67D414F5271EF99400E262C0 /* NewsSource.swift */,
@@ -152,11 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674742C227381F35009C81C1 /* LockedView.swift in Sources */,
 				67D414EA271EF8D500E262C0 /* ContentView.swift in Sources */,
+				674742C4273831A3009C81C1 /* ReadNote.swift in Sources */,
 				67094A652725AFF5003598A5 /* TouchVibration.swift in Sources */,
 				67D414E8271EF8D500E262C0 /* ReaderApp.swift in Sources */,
 				67094A632725AC68003598A5 /* Setting.swift in Sources */,
 				67D414FB271F250000E262C0 /* ArticleData.swift in Sources */,
+				674742C6273834D6009C81C1 /* ButtonModule.swift in Sources */,
 				67D414FD2721925100E262C0 /* NewsDetail.swift in Sources */,
 				67D414F6271EF99400E262C0 /* NewsSource.swift in Sources */,
 			);
@@ -292,6 +306,8 @@
 				DEVELOPMENT_TEAM = 893C72PZA9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reader/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "使用Face ID用于验证您的身份";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +338,8 @@
 				DEVELOPMENT_TEAM = 893C72PZA9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reader/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "使用Face ID用于验证您的身份";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
