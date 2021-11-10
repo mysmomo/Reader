@@ -1,5 +1,5 @@
 //
-//  ArticleData.swift
+//  TabReadingData.swift
 //  Reader
 //
 //  Created by mys_momo on 2021/10/20.
@@ -18,8 +18,8 @@ struct Article: Codable, Identifiable{
     //    var collectionName: String
 }
 
-//定义视图模型，讲视图与模型绑定，Published通知由模型数据变更引起视图变更
-class DataValue: ObservableObject{
+//定义视图模型，将视图与模型绑定，Published通知由模型数据变更引起视图变更
+class TabReadingData: ObservableObject{
     @Published var articles = [Article]()
     
     init(){

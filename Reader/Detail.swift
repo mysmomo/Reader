@@ -1,5 +1,5 @@
 //
-//  NewsDetail.swift
+//  Detail.swift
 //  Reader
 //
 //  Created by mys_momo on 2021/10/21.
