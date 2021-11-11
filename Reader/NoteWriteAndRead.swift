@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NoteWrite: View {
+struct NoteWriteAndRead: View {
     @StateObject var noteData = TabNoteData()
     @State var titleInput = ""
     @State var contentInput = ""
@@ -69,6 +69,6 @@ struct NoteWrite: View {
 
 struct NoteWrite_Previews: PreviewProvider {
     static var previews: some View {
-        NoteWrite()
+        NoteWriteAndRead()
     }
 }

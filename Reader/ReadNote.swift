@@ -13,28 +13,33 @@ struct ReadNote: View {
     
     var body: some View {
         NavigationView{
-            ScrollView{
-                HStack{
-                    //使用系统浏览器打开
-                    Link(destination: URL(string: "https://legolas.me")!) {
-                        ButtonModule(text: "在Safari打开", img: "safari")
+                VStack{
+                    Spacer()
+                        .frame(height: 20)
+                    HStack{
+                        //使用系统浏览器打开
+                        Link(destination: URL(string: "https://legolas.me")!) {
+                            ButtonModule(text: "在Safari打开", img: "safari")
+                        }
+                        
+                        //在app内部使用safari框架打开
+                        Button {
+                            self.isPresentSafariView = true
+                        } label: {
+                            ButtonModule(text: "在当前应用打开", img: "arrow.up.forward.app")
+                        }
+                        .safariView(isPresented: $isPresentSafariView) {
+                            SafariView(url: URL(string: "https://legolas.me")!, configuration: SafariView.Configuration(entersReaderIfAvailable: false, barCollapsingEnabled: false))
+                                .preferredBarAccentColor(.clear)
+                                .preferredControlAccentColor(.accentColor)
+                                .dismissButtonStyle(.done)
+                        }
                     }
                     
-                    //在app内部使用safari框架打开
-                    Button {
-                        self.isPresentSafariView = true
-                    } label: {
-                        ButtonModule(text: "在当前应用打开", img: "arrow.up.forward.app")
-                    }
-                    .safariView(isPresented: $isPresentSafariView) {
-                        SafariView(url: URL(string: "https://legolas.me")!, configuration: SafariView.Configuration(entersReaderIfAvailable: false, barCollapsingEnabled: false))
-                            .preferredBarAccentColor(.clear)
-                            .preferredControlAccentColor(.accentColor)
-                            .dismissButtonStyle(.done)
-                    }
+//                    Spacer()
+                    
+                    NoteWriteAndRead()
                 }
-                .padding(.top)
-            }
             .navigationTitle("笔记")
         }
     }
